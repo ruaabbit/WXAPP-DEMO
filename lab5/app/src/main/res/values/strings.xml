@@ -1,0 +1,13 @@
+<!--strings.xml-->
+<resources>
+    <string name="app_name">lab1</string>
+    <string name="pengyou">朋友圈</string>
+    <string name="right">右箭头</string>
+    <string name="saoyisao">扫一扫</string>
+    <string name="yaoyiyao">摇一摇</string>
+    <string name="kanyikan">看一看</string>
+    <string name="souyisou">搜一搜</string>
+    <string name="gouwu">购物</string>
+    <string name="youxi">游戏</string>
+    <string name="xiaochengxu">小程序</string>
+</resources>
