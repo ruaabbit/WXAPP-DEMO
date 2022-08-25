@@ -1,19 +1,41 @@
 // index.js
-
+var common = require('../../utils/common.js') //引用公共JS文件
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    swiperImg: [{
+        src: 'https://gaopursuit.oss-cn-beijing.aliyuncs.com/2022/newsimage1.jpg'
+      },
+      {
+        src: 'https://gaopursuit.oss-cn-beijing.aliyuncs.com/2022/newsimage2.jpg'
+      },
+      {
+        src: 'https://gaopursuit.oss-cn-beijing.aliyuncs.com/2022/newsimage3.jpg'
+      }
+    ],
+    newsList: []
+  },
+  goToDetail: function (e) {
+    //获取携带data-id的数据
+    let id = e.currentTarget.dataset.id
+    //console.log(e)
+    //携带新闻ID进行页面跳转
+    wx.navigateTo({
+      url: '../detail/detail?id=' + id,
+    })
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let list = common.getNewsList()
+    this.setData({
+      newsList: list
+    })
   },
 
   /**
