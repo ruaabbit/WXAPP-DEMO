@@ -1,0 +1,34 @@
+<view class="mine">
+    <view class="mine_title">
+        <view class="mine_title_portrait-self">
+            <view class="mine_title_portrait-top">
+                <image src="{{userinfo.avatarUrl}}"></image>
+                <view>{{userinfo.nickName}}</view>
+            </view>
+        </view>
+        <view class="mine_title_portrait-other">
+            <view class="mine_title_portrait-top-other" bindtap="onMask">
+                <image src="{{openid==datalist1.inviter?datalist1.recipientimg:datalist1.inviterimg || '../../image/love.png' }}"></image>
+                <view>{{openid==datalist1.inviter?datalist1.recipientName:datalist1.inviterName || '暂无' }}</view>
+                <view class="mine_title_button">形成羁绊{{day1}}天</view>
+            </view>
+            <view class="mine_title_portrait-top-other" bindtap="onMask">
+                <image src="{{openid==datalist2.inviter?datalist2.recipientimg:datalist2.inviterimg || '../../image/love.png' }}"></image>
+                <view>{{openid==datalist2.inviter?datalist2.recipientName:datalist2.inviterName || '暂无' }}</view>
+                <view class="mine_title_button">形成羁绊{{day2}}天</view>
+            </view>
+        </view>
+
+
+    </view>
+</view>
+<view class="add_Mask" wx:if="{{maskshow}}">
+    <view class="add_Mask_content">
+        <view class="add_Mask_content_top">修改Ta</view>
+        <view class="add_Mask_content_cont">是否确认修改Ta？如果确认，双方将清空所有信息，请提前备份</view>
+        <view class="add_Mask_content_button">
+            <view class="add_Mask_content_button_config" bindtap="updateTa">确认修改</view>
+            <view class="add_Mask_content_button_cancel" bindtap="offMask">放弃修改</view>
+        </view>
+    </view>
+</view>

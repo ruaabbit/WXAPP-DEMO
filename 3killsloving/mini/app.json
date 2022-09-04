@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/mainpage/index",
+        "pages/mydream/index",
+        "pages/adddream/index",
+        "pages/shareappmessage/index",
+        "pages/login/index",
+        "pages/minedata/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "恋爱三角杀",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#1485EE",
+        "selectedColor": "#FF514E",
+        "list": [{
+                "pagePath": "pages/mainpage/index",
+                "text": "主页",
+                "iconPath": "image/02.png",
+                "selectedIconPath": "image/022.png"
+            },
+            {
+                "pagePath": "pages/mydream/index",
+                "text": "留言",
+                "iconPath": "image/04.png",
+                "selectedIconPath": "image/044.png"
+            },
+            {
+                "pagePath": "pages/minedata/index",
+                "text": "我的",
+                "iconPath": "image/06.png",
+                "selectedIconPath": "image/066.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
